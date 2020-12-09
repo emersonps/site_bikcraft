@@ -151,7 +151,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.endereco {
+.orcamento_dados span:nth-of-type(even) {
   margin-bottom: 25px;
 }
 
