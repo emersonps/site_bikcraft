@@ -86,7 +86,7 @@
   .introducao {
     margin-top: 0;
     padding-top: 50px;
-    background: url("/img/bg-mobile.jpg");
+    background: url("../img/bg-mobile.jpg");
   }
 
   .introducao h1 {
