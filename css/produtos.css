@@ -35,6 +35,11 @@
   margin: 6px auto 8px auto;
 }
 
+.produto_icone {
+  background: #000;
+  padding: 70px 0;
+}
+
 .produto_icone img {
   margin: 0 auto;
 }

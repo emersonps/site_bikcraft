@@ -10,6 +10,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .btn {
@@ -187,6 +188,12 @@ img {
 .produtos_lista li {
   background: #fec63e;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.produtos_lista li img {
+  /* text-align: center; Comos foi aplicado display-block para as imagens, o text-align não funcionará*/
+  margin: 0 auto;
 }
 
 .produtos_lista li h3 {
@@ -214,6 +221,7 @@ img {
 .produtos_icone {
   background: #000;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .call {
@@ -242,7 +250,7 @@ img {
   background: #fec63e;
 }
 
-.portfolio_lista li:last-child {
+.portfolio_lista li {
   margin-top: 20px;
 }
 
@@ -351,7 +359,7 @@ img {
 
 .footer_redes ul li {
   display: inline-block;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer_redes ul li a {

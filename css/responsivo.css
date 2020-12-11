@@ -1,0 +1,165 @@
+/* Estilo para tablet */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  /* Qualidade Home */
+  .qualidade:after {
+    right: 66px;
+  }
+
+  .qualidade_lista li {
+    padding: 0 10px;
+  }
+
+  /* Footer */
+  .footer_redes ul li a {
+    border: 3px solid #fec63e;
+    display: block;
+    padding: 6px;
+  }
+
+  .footer_redes ul li a img {
+    width: 26px;
+    height: 26px;
+  }
+
+  /* Produtos */
+  .produto_item h2 {
+    top: -150px;
+    margin-bottom: -56px;
+  }
+
+  /* Produtos Ícone */
+  .produto_icone {
+    background: #000;
+    padding: 41px 0;
+  }
+
+  /* Produtos Info */
+  .produto_info p {
+    font-size: 14px;
+    line-height: 20px;
+    height: 122px;
+    padding: 20px 30px;
+  }
+
+  .produto_info ul li {
+    width: 181px;
+    height: 49px;
+  }
+} /* Final do estilo para tablets*/
+
+/* Estilo para Smartphone*/
+@media only screen and (max-width: 767px) {
+  /* Header */
+  .header {
+    position: relative; /* Tirando do Fixed*/
+    padding-bottom: 20px;
+  }
+
+  .header img {
+    margin: 0 auto 10px auto;
+  }
+
+  .header_menu {
+    text-align: center;
+  }
+
+  .header_menu ul li {
+    margin: 5px;
+  }
+
+  .header_menu ul li a {
+    border: 4px solid #000;
+    width: 130px;
+    display: block;
+    float: left;
+  }
+
+  .header_menu ul li a:hover {
+    border-color: #fff;
+  }
+
+  .header_menu ul li a.menu_ativo {
+    border-color: #fff;
+  }
+
+  /* Introdução */
+  .introducao {
+    margin-top: 0;
+    padding-top: 50px;
+    background: url("/img/bg-mobile.jpg");
+  }
+
+  .introducao h1 {
+    font-size: 36px;
+  }
+
+  /* Introdução Interna */
+  .introducao-interna {
+    margin-top: 0;
+  }
+
+  .call {
+    padding-top: 10px;
+  }
+
+  /* Qualidade Home */
+  .qualidade:after {
+    display: none;
+  }
+
+  /* Mssão Sobre */
+  .missao_sobre p {
+    padding-right: 0px;
+    font-size: 14px;
+  }
+
+  .missao_sobre ul li {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  /* Produtos */
+
+  .produto_item div {
+    margin-bottom: 20px;
+  }
+
+  .produto_item h2 {
+    top: -100px;
+    margin-bottom: -68px;
+  }
+
+  /* Produtos Ícone */
+  .produto_icone {
+    background: #000;
+    padding: 41px 0;
+    margin-bottom: 20px;
+  }
+
+  /* Produtos Info */
+  .produto_info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+  }
+
+  .produto_info ul li {
+    width: 149px;
+    height: 49px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .form {
+    padding-right: 0;
+  }
+
+  .orcamento_dados ul {
+    padding-right: 0;
+  }
+
+  /* Contato Formulário */
+  #form_orcamento {
+    padding-right: 0;
+  }
+} /* Final do estilo para smartphone*/
