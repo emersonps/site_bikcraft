@@ -115,7 +115,7 @@ img {
 .introducao {
   width: 100%;
   height: 380px;
-  background: url("../img/bg.jpg") no-repeat center;
+  background: url("/img/bg.jpg") no-repeat center;
   margin-top: 92px;
   text-align: center;
   padding-top: 90px;
