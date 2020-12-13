@@ -377,3 +377,71 @@ img {
   background: #fec63e;
   padding: 20px 0;
 }
+
+/* JavaScript */
+/* 5 Adicione o CSS Essencial abaixo */
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+/* 6 CSS recomendado para a navegação */
+.js [data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+}
+.js [data-slide-nav] > button.active {
+  background: #fec454;
+}
+
+/* 6 Adicione o CSS Essêncial abaixo */
+.js [data-anime] {
+  opacity: 0;
+}
+
+/* 7 CSS personalizado dependendo da animação desejada - DEVE VIR SEMPRE ANTES DA CLASS .anime (abaixo)*/
+.js .fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+
+.js .fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+
+.js .fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
