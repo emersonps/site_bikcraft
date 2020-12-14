@@ -3,7 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
+  <title>Bikcraft - Contato - 92 98103-6637</title>
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bikcraft - Contato - 92 98103-6637" />
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte" />
+  <meta property="og:url" content="http://bikcraft.com/contato.html" />
+  <meta property="og:image" content="http://bikcraft.com/img/og-image.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/grid.css">
@@ -41,20 +50,25 @@
   </section>
 
   <section class="contato container fadeInDown" data-anime="1200">
-    <form action="" id="form_orcamento" class="contato_form grid-8">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome">
+    <form id="form_orcamento" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
+      <label for="nome" name="name">Nome</label>
+      <input type="text" id="nome" required>
 
       <label for="email">E-mail</label>
-      <input type="text" id="email">
+      <input type="email" id="email" name="email" required>
 
       <label for="telefone">Telefone</label>
-      <input type="text" id="telefone">
+      <input type="text" id="telefone" name="telefone">
+
+      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+      <input type="text" class="nao-aparece" name="leaveblank">
+      <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+      <input type="text" class="nao-aparece" name="dontchange" value="http://">
 
       <label for="espec">Especificações</label>
-      <textarea id="espec"></textarea>
+      <textarea id="espec" name="especializacoes" required></textarea>
 
-      <button type="submit" class="btn btn-preto">Enviar</button>
+      <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
     </form>
 
     <div class="contato_dados grid-8">
@@ -145,7 +159,9 @@
       </div>
     </div>
   </footer>
+
   <script src="./js/simple-anime.js"></script> <!-- Deve vir antes dop scriopt.js-->
+  <script src="./js/simple-form.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
